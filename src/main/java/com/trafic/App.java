@@ -20,7 +20,8 @@ public class App {
             System.out.println("1. Показать состояния светофоров");
             System.out.println("2. Увеличить очередь");
             System.out.println("3. Уменьшить очередь");
-            System.out.println("4. Выйти");
+            System.out.println("4, Запуск управления");
+            System.out.println("5. Выйти");
             System.out.print("Выберите действие: ");
             int choice = scanner.nextInt();
 
@@ -59,6 +60,9 @@ public class App {
                     }
                     break;
                 case 4:
+                    System.out.println("Запуск управления");
+                    controller.controlTraffic();
+                case 5:
                     System.out.println("Завершение работы.");
                     scanner.close();
                     return;
